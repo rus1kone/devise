@@ -10,29 +10,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
+    <header id="home" class="header">
         <div class="header__inner">
+            <a class="header__logo" href="#">
+                <span>d</span><span>e</span><span>v</span><span>i</span><span>s</span><span>e</span>
+            </a>
+            
             <nav class="header__menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Home</a>
+                        <a class="header__menu-link" href="#home">Home</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Services</a>
+                        <a class="header__menu-link" href="#services">Services</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Project`s</a>
+                        <a class="header__menu-link" href="#projects">Project`s</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Review`s</a>
+                        <a class="header__menu-link" href="#reviews">Review`s</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Get In Touch</a>
+                        <a class="header__menu-link" href="#contacts">Get In Touch</a>
                     </li>
                 </ul>
             </nav>
@@ -43,8 +50,7 @@
             <div class="hero__inner">
                 <div class="hero__content">
                     <h1 class="hero__title">Devise Web Studio</h1>
-                    <p class="hero__text">A web studio that brings our clients' ideas to life, creating user-friendly,
-                        striking, and effective websites that delight both visually and functionally.</p>
+                    <p class="hero__text">We are a creative agency that brings our clients' ideas to life, creating user-friendly, striking, and effective websites that delight both visually and functionally.</p>
                     <button class="hero__btn">Let`s get started</button>
                 </div>
             </div>
@@ -61,7 +67,7 @@
             </div>
         </section>
         <section class="services">
-            <div class="services__inner">
+            <div id="services" class="services__inner">
                 <h2 class="services__title">Services</h2>
                 <div class="services__items">
                     <div class="services__item">
@@ -111,7 +117,105 @@
                 </div>
             </div>
         </section>
+        <section class="projects">
+            <div id="projects" class="projects__inner">
+                <h2 class="projects__title">Project`s</h2>
+                <p class="projects__text">We have successfully delivered a range of projects, from elegant brand identities to fully customized, responsive websites. Our portfolio showcases creative solutions tailored to diverse industries, reflecting our commitment to quality and innovation.</p>
+                <div class="swiper projects__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide projects__slide">
+                            <div class="projects__image">
+                                <img src="images/tom.jpg" alt="">
+                            </div>
+                            <h3 class="projects__slide-title">MasloTom <span>From A to Z / E-commerce</span></h3>
+                            <p class="projects__slide-text">We have been working since 2012 and during this time we have managed to become market leaders. We sell our products throughout Ukraine and far beyond its borders.</p>
+                            <button class="projects__btn">Know more</button>
+                        </div>
+                        <div class="swiper-slide projects__slide">
+                            <div class="projects__image">
+                                <img src="images/depo.jpg" alt="">
+                            </div>
+                            <h3 class="projects__slide-title">Creative Depo <span>From A to Z / Web Development</span></h3>
+                            <p class="projects__slide-text">Creative Depo is a brand of stylish patriotic clothing. After the de-occupation of Kyiv region, Volodymyr Zelenskyi appeared in public for the first time in our “I’m Ukrainian” t-shirt. </p>
+                            <button class="projects__btn">Know more</button>
+                        </div>
+                        <div class="swiper-slide projects__slide">
+                            <div class="projects__image">
+                                <img src="images/tacrom.jpg" alt="">
+                            </div>
+                            <h3 class="projects__slide-title">TacRom <span>Web Development</span></h3>
+                            <p class="projects__slide-text">Oilfield Service Company. Tacrom was founded in 2006 to provide quality oilfield services in Eastern Europe with over 350 employees. Company is proud offer the most modern fleet of equipment in Europe.</p>
+                            <button class="projects__btn">Know more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects__button-prev"></div>
+                <div class="projects__button-next"></div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div id="reviews" class="reviews__inner">
+                <h3 class="reviews__title">Review`s</h3>
+                <p class="reviews__text">feedback from our clients</p>
+                <div class="reviews__items">
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-text">Incredible experience! The team created a stunning website that perfectly represents our brand, and the process was smooth and professional from start to finish.</p>
+                            <div class="reviews__item-client">
+                                <img src="images/emily.png" alt="">
+                                <span>Emily Roberts</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-text">They truly understand design and functionality! Our website is not only beautiful but also super fast and easy to navigate—highly recommend!</p>
+                            <div class="reviews__item-client">
+                                <img src="images/daniel.png" alt="">
+                                <span>Daniel Smith</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-text">Amazing service and attention to detail! They took our vision and turned it into a fully functional website that exceeded our expectations</p>
+                            <div class="reviews__item-client">
+                                <img src="images/sofia.png" alt="">
+                                <span>Sofia Martinez</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-text">From branding to launch, everything was handled flawlessly. The support team is always there when we need them—fantastic company to work with!</p>
+                            <div class="reviews__item-client">
+                                <img src="images/proriv.png" alt="">
+                                <span>ProRiv AS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer id="contacts" class="footer">
+        <div class="footer__inner">
+            <a class="footer__logo" href="#home">
+                <span>d</span><span>e</span><span>v</span><span>i</span><span>s</span><span>e</span>
+            </a>
+            <a href="mailto:deviseweb.studio@gmail.com" class="footer__mail">devise.webstudio@gmail.com</a>
+            <a href="tel:+4796855844" class="footer__phone">+ 47 968 558 44</a>
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="images/instagram.svg" alt=""></a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="images/facebook.svg" alt=""></a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="images/linkedin.svg" alt=""></a></li>
+                <li class="footer__list-item"><a href="" class="footer__list-link"><img src="images/behance.svg" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
