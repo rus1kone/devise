@@ -17,7 +17,26 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111; /* Тёмный фон трека */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Серый цвет полосы */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb; /* Светлее при наведении */
+}
+
 
 .container{
   max-width: 1230px;
@@ -54,7 +73,7 @@ body {
   font-family: "IBM Plex Mono", serif;
   font-weight: 400;
   font-size: 14px;
-  background-color: #080808;
+  background-color: #000000;
   color: #9C9C9C;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -108,3 +127,8 @@ audio, video {
   display: block;
   height: auto;
 }
+
+
+
+
+
