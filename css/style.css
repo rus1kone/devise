@@ -9,6 +9,12 @@
     align-items: center;
     justify-content: space-between;
     transition: background-color .3s ease 0s;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 0;
 }
 
 .header__logo {
@@ -87,27 +93,28 @@
     transform: scaleX(1);
 }
 
-.header__controls {
+.languages {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    font-size: 16px;
+    
+    column-gap: 30px;
 }
-
-.header__language {
-    cursor: default;
-}
-
-.header__language-en--active,
-.header__language-no--active {
+.languages__en--active {
     color: #FFF;
 }
+.languages__no--active {
+    color: #FFF;
+}
+
+
 
 /* =========================================== */
 
 .hero__inner {
     padding: 0 25px;
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 204px;
     padding-bottom: 120px;
     max-width: 1170px;
     display: flex;
@@ -184,7 +191,7 @@
 /* =========================================== */
 
 .services {
-    padding-top: 130px;
+    padding-top: 62px;
     padding-bottom: 30px;
 }
 
@@ -200,7 +207,7 @@
     max-width: 1070px;
     padding: 0 25px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 78px;
     
 }
 
@@ -263,6 +270,7 @@
     position: relative;
     transition: all .3s ease 0s;
     outline: 3px solid transparent;
+    display: inline-block;
 }
 
 .services__item-btn:hover{
@@ -335,14 +343,14 @@
 /* =========================================== */
 
 .projects {
-    padding-top: 130px;
+    padding-top: 62px;
 }
 .projects__inner {
     max-width: 1070px;
     padding: 0 25px;
     margin: 0 auto;
     position: relative;
-    padding-top: 10px;
+    padding-top: 78px;
 }
 .projects__title {
     text-align: center;
@@ -399,6 +407,7 @@
     line-height: 24px;
 }
 .projects__btn {
+    display: inline-block;
     padding: 12px 40px 12px 24px;
     background-color: #011381;
     font-weight: 700;
@@ -426,8 +435,8 @@
     transition: all .3s ease 0s;
 }
 .projects__button-prev, .projects__button-next {
-    width: 30px;
-    height: 30px;
+    width: 54px;
+    height: 54px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -442,12 +451,12 @@
 
 .projects__button-prev{
     background-image: url('../images/swiper-prev.svg');
-    left: -55px;
+    left: -75px;
 }
 
 .projects__button-next{
     background-image: url('../images/swiper-next.svg');
-    right: -55px;
+    right: -75px;
 }
 
 .projects__button-prev:hover, 
@@ -459,13 +468,14 @@
 /* =========================================== */
 
 .reviews {
-    padding-top: 130px;
+    padding-top: 62px;
+    /* padding-bottom: 213px; */
 }
 .reviews__inner {
     max-width: 1070px;
     padding: 0 25px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 78px;
 }
 .reviews__title {
     text-align: center;
@@ -526,7 +536,7 @@
     transform: rotate(180deg);
 }
 .reviews__item-text {
-    max-width: 360px;
+    max-width: 370px;
     line-height: 24px;
     margin-bottom: 8px;
 }
@@ -544,11 +554,16 @@
 
 .footer{
     margin-top: 140px;
+    /* position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0; */
 }
 
 .footer__inner{
     padding: 26px 50px;
-    background-color: #1B1B1B;
+    background-color: #1B1B1b;
     margin: 0 auto;
     max-width: 1300px;
     border-start-end-radius: 8px;
@@ -625,3 +640,63 @@
       transform: scale(1.1);
     }
   }
+
+
+
+.design {
+}
+.design__inner {
+    padding: 0 25px;
+    margin: 0 auto;
+    padding-top: 124px;
+    max-width: 1070px;
+}
+.design__title {
+    font-family: "Raleway", serif;
+    font-size: 34px;
+    font-weight: 800;
+    color: #EFEFEF;
+    text-align: center;
+    /* margin-bottom: 60px; */
+    position: absolute;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    z-index: 20;
+}
+
+.design__image{
+    border-radius: 9px;
+    overflow: hidden;
+    position: relative;
+}
+
+.design__image img{
+    opacity: 0.3;
+}
+.design__content {
+    margin-top: 30px;
+}
+.design__content-text {
+    font-size: 20px;
+    line-height: 33px;
+}
+
+.design__content-title {
+    font-family: "Raleway", serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #EFEFEF;
+    margin-top: 90px;
+}
+.design__list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    list-style: circle;
+    padding-left: 20px;
+}
+.design__list-item {
+    font-size: 18px;
+}
