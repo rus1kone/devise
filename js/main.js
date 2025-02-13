@@ -10,12 +10,18 @@ const projectsSlider = new Swiper(".projects__slider", {
         el: ".projects__pagination",
         clickable: true,
     },
-    // autoplay: {
-    //     delay: 4000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    speed: 800,
     // breakpoints: {
     //     768: { slidesPerView: 2 },
     //     1424: { slidesPerView: 1 },
     // }
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    
+   });
+  
